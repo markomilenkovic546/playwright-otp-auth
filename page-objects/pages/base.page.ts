@@ -1,9 +1,9 @@
-import type { Locator, Page } from "@playwright/test";
+import type { Locator, Page } from '@playwright/test';
 
 export default abstract class BasePage {
-  constructor(readonly page: Page) {}
+    constructor(readonly page: Page) {}
 
-  async open(path: string) {
-    await this.page.goto(path);
-  }
+    async open(path: string) {
+        await this.page.goto(path);
+    }
 }
