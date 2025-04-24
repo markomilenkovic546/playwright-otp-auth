@@ -1,0 +1,17 @@
+{
+  "name": "playwright-otp-auth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^9.1.0",
+    "@mailsac/api": "^1.0.8",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.14.1",
+    "prettier": "^3.5.3"
+  },
+  "scripts": {},
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
