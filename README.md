@@ -4,7 +4,10 @@ This project demonstrates automated testing of OTP (One-Time Password) authentic
 
 Instead of interacting with the inbox through a web UI, this approach leverages Mailsac's API to fetch OTP codes quickly and reliably using the `mailsac-typescript-api` wrapper.
 
----
+## 🌐 Website Under Test
+
+The website under test is accessible at [https://practice.expandtesting.com/otp-login](https://practice.expandtesting.com/otp-login).
+
 
 ## ✨ Features
 
