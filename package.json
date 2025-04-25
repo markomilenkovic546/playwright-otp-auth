@@ -10,7 +10,9 @@
     "@types/node": "^22.14.1",
     "prettier": "^3.5.3"
   },
-  "scripts": {},
+  "scripts": {
+    "e2e": "npx playwright test"
+  },
   "dependencies": {
     "dotenv": "^16.5.0"
   }
