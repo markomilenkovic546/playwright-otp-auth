@@ -56,7 +56,7 @@ test.describe('OTP Login Flow', () => {
 
         await test.step('Submit OTP', async () => {
             await loginPage.submitOtpToVerify();
-            await expect(page).toHaveURL(/otp-login/, { timeout: 10000 });
+            await expect(page).toHaveURL(/otp-verification/, { timeout: 10000 });
             await expect(loginPage.otpStatusMessage).toContainText(
                 'The provided OTP code is incorrect. Please check your code and try again.'
             );
@@ -113,7 +113,7 @@ test.describe('OTP Login Flow', () => {
 
         await test.step('Submit already used OTP', async () => {
             await loginPage.submitOtpToVerify();
-            await expect(page).toHaveURL(/otp-login/, { timeout: 10000 });
+            await expect(page).toHaveURL(/otp-verification/, { timeout: 10000 });
             await expect(loginPage.otpStatusMessage).toContainText(
                 'The provided OTP code is incorrect. Please check your code and try again.'
             );
