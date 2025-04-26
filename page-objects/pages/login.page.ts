@@ -28,7 +28,7 @@ export default class LoginPage extends BasePage {
      * Opens the login page by navigating to the specified URL.
      * The URL is constructed using the base URL from the environment variable.
      */
-    async open() {
+    async open(): Promise<void> {
         await super.open(this.path);
     }
 
@@ -37,7 +37,7 @@ export default class LoginPage extends BasePage {
      *
      * @param email - The email address to enter in the field.
      */
-    async enterEmail(email: string) {
+    async enterEmail(email: string): Promise<void> {
         await this.emailField.waitFor({ state: 'visible', timeout: 5000 });
         await this.emailField.fill(email);
     }
@@ -45,7 +45,7 @@ export default class LoginPage extends BasePage {
     /**
      * Clicks the button to submit the entered email and request the OTP.
      */
-    async submitEmail() {
+    async submitEmail(): Promise<void> {
         await this.submitEmailBtn.click();
     }
 
@@ -55,7 +55,7 @@ export default class LoginPage extends BasePage {
      *
      * @param otp - The OTP to enter in the field.
      */
-    async enterOtp(otp: string) {
+    async enterOtp(otp: string): Promise<void> {
         await this.otpField.waitFor({ state: 'visible', timeout: 5000 });
         await this.otpField.fill(otp);
     }
@@ -63,7 +63,7 @@ export default class LoginPage extends BasePage {
     /**
      * Clicks the button to submit the entered OTP and verify it.
      */
-    async submitOtpToVerify() {
+    async submitOtpToVerify(): Promise<void> {
         await this.verifyOtpBtn.click();
     }
 }

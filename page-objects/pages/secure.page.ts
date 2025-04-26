@@ -28,7 +28,7 @@ export default class SecurePage {
      * Clicks the logout link to log the user out of the application.
      * After this action, the user is redirected to the login page.
      */
-    async logout() {
+    async logout(): Promise<void> {
         await this.logoutButton.click();
     }
 }
