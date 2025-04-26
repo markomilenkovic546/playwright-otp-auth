@@ -14,7 +14,7 @@ The website under test is accessible at [https://practice.expandtesting.com/otp-
 - ✅ Automated OTP login flow using Playwright
 - ✅ Access OTP from email inbox using API (no UI interaction)
 - ✅ Uses [`mailsac-typescript-api`](https://www.npmjs.com/package/mailsac-typescript-api) for structured API communication
-- ✅ Random test email generation using `faker.js`
+- ✅ Random test data generation using `faker.js`
 - ✅ Clean test architecture using the Page Object Model (POM) pattern
 - ✅ Custom `EmailHelper` class to interact with Mailsac API and extract OTP
 - ✅ Custom Playwright fixtures to inject page objects into the tests
@@ -33,7 +33,7 @@ This means you can send emails to **any email like `randomusername@mailsac.com`*
 ## 🔧 Technologies Used
 
 - **playwright/test** – Testing framework
-- **faker.js** – Generates random test emails
+- **faker.js** – Generates random data
 - **Mailsac** – Email sandbox for test inboxes
 - **mailsac-typescript-api** – Typed wrapper for Mailsac API
 - **dotenv** – For managing environment variables

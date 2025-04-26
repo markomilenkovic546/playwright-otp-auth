@@ -26,7 +26,6 @@ export default class LoginPage extends BasePage {
 
     /**
      * Opens the login page by navigating to the specified URL.
-     * The URL is constructed using the base URL from the environment variable.
      */
     async open(): Promise<void> {
         await super.open(this.path);
