@@ -72,5 +72,5 @@ npm run e2e
 # or
 yarn e2e
 # or
-pnpm e2e
+pnpm run e2e
 ```
